@@ -1,0 +1,69 @@
+# Relatório de teste de recebimento operacional — Gate A6
+
+**Projeto:** PRJ-000021 — Cursos Universitários  
+**Data do teste:** 2026-10-10  
+**Repositório:** https://github.com/thiagoba2004/cursos-universitarios  
+**Branch e referência examinadas:** `main` @ `b9bc9f1cc1871775b144c6261a37041faeb31971`  
+**Natureza:** diagnóstico de auditoria documental, sem aceite de handoff nem alteração dos arquivos de estado.  
+**Conclusão:** `HANDOFF_PENDING` / **Gate A6 não integralmente comprovado**.
+
+## 1. Procedimento e evidências de leitura
+
+Os cinco arquivos obrigatórios foram recuperados diretamente do repositório GitHub, na branch `main`, com leitura efetiva de seu conteúdo UTF-8 e identificação dos blobs Git. Foi lido também o plano da estratégia técnica inicial, verificado o diretório `estrategias/`, e conferida a referência da branch.
+
+| Fonte lida | SHA do blob Git | Achado |
+|---|---|---|
+| [AGENTS.md](../AGENTS.md) | `f60763fd3612a4f770500ec4d8889311c6743143` | Identidade PRJ-000021, Kernel 1.11, missão ainda marcada como pendente. |
+| [PROJECT_STATE.json](../PROJECT_STATE.json) | `0a48bb4e05b854adecb2b5fe7e177e5346194eb8` | Última estratégia concluída EA-000021-000001; estratégia e fase atuais nulas; escopo ainda marcado como pendente. |
+| [ROADMAP.md](../ROADMAP.md) | `405eb611cee96d7a1b93ee44ba0ed9a91876b317` | Fechamento técnico das quatro fases; trechos antigos ainda tratam a missão como não aprovada. |
+| [REQUEST_LOG.jsonl](../REQUEST_LOG.jsonl) | `74ad604b92720fff93a73a16f8c60e2f62959b73` | Pedido REQ-000021-20261010-002 registra aprovação posterior da missão e preparação de handoff C3. |
+| [STRATEGY_LOG.jsonl](../STRATEGY_LOG.jsonl) | `e2921eca0ed712e5a7d789fb486093c1d7ebca46` | Evento de conclusão EVT-000021-20261010-002 para EA-000021-000001; ausência de evento da EA-000021-000002. |
+| [Plano da EA-000021-000001](../estrategias/EA-000021-000001-bootstrap-rota-a.md) | `64b085077b3b729ddffa5cbb917a89c01aab1ca6` | Mandato de bootstrap exclusivamente técnico, dividido em quatro fases. |
+
+Referência de versão: [commit b9bc9f1](https://github.com/thiagoba2004/cursos-universitarios/commit/b9bc9f1cc1871775b144c6261a37041faeb31971). Esse commit registrou a aprovação posterior em `REQUEST_LOG.jsonl`, sem reconciliar os demais documentos.
+
+## 2. Identidade, missão e estado recuperados
+
+- **Identidade:** PRJ-000021 — Cursos Universitários; repositório público `thiagoba2004/cursos-universitarios`, branch padrão `main`.
+- **Gerador:** PRJ-000002; estratégia geradora EA-000002-000025; Kernel 1.11.
+- **Missão aprovada:** pesquisar e sistematizar informações sobre cursos superiores e instituições de ensino. A aprovação está registrada no pedido `REQ-000021-20261010-002` e **não deve ser novamente solicitada**.
+- **Última estratégia comprovadamente concluída:** `EA-000021-000001` — inicialização técnica canônica pela Rota A.
+- **Última fase concluída:** `F-000021-000001-004`, com terminal gate `PUBLIC_PROJECT_TECHNICAL_BOOTSTRAP_VERIFIED`.
+- **Estratégia/fase atual:** nenhuma estratégia ativa ou fase corrente comprovada; `PROJECT_STATE.json` mantém campos nulos.
+- **Referência subsequente:** `EA-000021-000002` consta do Request Log, mas sem plano correspondente no diretório `estrategias/` ou evento no Strategy Log examinado. Não se infere criação, início ou conclusão dessa EA.
+- **Configuração-alvo aprovada:** Projeto ChatGPT especializado com isolamento contextual C3; aprovação não equivale à configuração comprovada na plataforma.
+
+## 3. Divergência e pendências
+
+**Divergência factual:** a missão já aprovada foi registrada em `REQUEST_LOG.jsonl`, enquanto `AGENTS.md`, `PROJECT_STATE.json`, `ROADMAP.md` e `README.md` conservam o estado de missão substantiva pendente. O perfil do Gerador também requer reconciliação. Essa lacuna não cancela a aprovação humana.
+
+**Pendências prioritárias:**
+
+1. Encaminhar ao Gerador/Coordenador a reconciliação dos documentos canônicos e do perfil, respeitando autorizações e verificando o commit resultante; sem reabrir a estratégia técnica concluída por inferência.
+2. Esclarecer e registrar formalmente o estado, o plano de fases e eventuais responsáveis da `EA-000021-000002`, sem atribuir fase inexistente.
+3. Comprovar por evidência independente o vínculo do Projeto ChatGPT especializado ao PRJ (`B1`) e a configuração efetiva de memória `C3`.
+4. Formalizar o recebimento no Projeto destinatário e persistir o comprovante próprio do Gate A6.
+
+## 4. Matriz de conformidade do Gate A6
+
+| Requisito | Diagnóstico |
+|---|---|
+| Identidade PRJ, repositório e leitura efetiva dos cinco arquivos | `VERIFIED` |
+| Última estratégia e última fase concluídas | `VERIFIED` |
+| Aprovação humana da missão | `VERIFIED` (registro em Request Log) |
+| Reconciliação de todos os arquivos canônicos com a missão aprovada | `PENDING` |
+| Plano e fase comprovados da EA-000021-000002 | `PENDING` |
+| Escolha humana de configuração-alvo C3 | `VERIFIED` (aprovação documental) |
+| Vínculo efetivo B1 e configuração efetiva C3 na interface | `NOT_VERIFIED` |
+| Leitura e recuperação documental nesta conversa | `VERIFIED` |
+| Registro persistido de aceite integral do handoff | `PENDING` |
+
+**Limite do teste:** o contexto da conversa identificou o Projeto como Cursos Universitários, mas esse indício não valida independentemente configurações da interface nem cria identificador de contêiner. O readback documental não substitui os controles de vinculação, memória e aceite formal.
+
+## 5. Decisão
+
+**Resultado:** `HANDOFF_PENDING`. **Não** declarar `PROJECT_OPERATIONAL_HANDOFF_ACCEPTED` nesta etapa. O bootstrap técnico anterior permanece concluído; a missão humana permanece aprovada; o recebimento documental foi executado, com ressalvas. Um eventual aceite integral requer solucionar e verificar as pendências pertinentes.
+
+**Integridade:** este relatório é uma evidência documental do teste e não comprova que as alterações corretivas tenham sido feitas. Nenhuma Estratégia, fase, autorização para gasto, serviço educacional, site, GitHub Pages ou mudança de configuração de memória decorre desta auditoria.
+
+**Fonte normativa pública de referência:** [GERADOR_WORKFLOW.md — Etapa A6](https://github.com/thiagoba2004/gerador-de-agents/blob/main/GERADOR_WORKFLOW.md). As fontes internas da Governança Geral não foram reproduzidas neste documento público.
