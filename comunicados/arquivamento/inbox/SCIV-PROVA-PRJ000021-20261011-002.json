@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "PRJ-000021",
+  "repository": "thiagoba2004/cursos-universitarios",
+  "ref": "feat/sciv-sob-demanda-issue-5-20261011",
+  "event_type": "ENVELOPE_ARCHIVED_NOT_EXECUTION_COMPLETED",
+  "direction": "inbox",
+  "message_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "correlation_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "in_reply_to": null,
+  "source_path": "comunicados/governanca-geral/mensagens/SCIV-PROVA-PRJ000021-20261011-002.json",
+  "history_path": "comunicados/governanca-geral/historico/SCIV-PROVA-PRJ000021-20261011-002.json",
+  "message_sha256": "8e6449ae8af33ec193a87e9dc0ee4205cc654d761ffb481fb7f731df4582d0ae",
+  "message_blob_sha": "5154945382f01f33bc70bbf27affe5396d26ad37",
+  "original_publication_commit": "47d5dd0d4deca92e3d752e5ec161ee9e020470a8",
+  "original_source_version_declared": "7c8384d51f82409150bc8fe0c7bdcf05d8ff883d",
+  "reply_id": "SCIV-OBJECTION-PRJ000021-20261011-002",
+  "reply_path": "comunicados/ia-especializada/mensagens/SCIV-OBJECTION-PRJ000021-20261011-002.json",
+  "reply_in_reply_to": "SCIV-PROVA-PRJ000021-20261011-002",
+  "reply_sha256": "232053eee10d9b8db6d6a58d242fa35eec05a472a1af35504e9440f9ef7db5dc",
+  "reply_blob_sha": "5659f78ef82418779f943be5e9d207c5f9d045b6",
+  "reply_commit": "5953a1f304e2b3ba9d0b53cb57ddbcea3a4596ff",
+  "treatment_path": "comunicados/tratamentos/SCIV-TRATAMENTO-002-INBOX.json",
+  "treatment_blob_sha": "0914a9fb4689b4f7e753d7d8e001b6fbe302a13e",
+  "observed_commit": "5953a1f304e2b3ba9d0b53cb57ddbcea3a4596ff",
+  "observed_at": "2026-10-11T06:41:05.963Z",
+  "execution_verified": false,
+  "pending_nonoperative_tests": [
+    "NATIVE_CHATGPT_INSTRUCTIONS_UPDATED",
+    "REAL_CONVERSATION_VALIDATION_PENDING"
+  ],
+  "decision": "Arquivamento administrativo fundamentado após resposta OBJECTION002 persistida e confirmada; sem homologação de bootstrap espontâneo."
+}

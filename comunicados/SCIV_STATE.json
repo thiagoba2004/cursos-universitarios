@@ -91,11 +91,29 @@
     {
       "path": "comunicados/ia-especializada/historico/SCIV-OBJECTION-PRJ000021-20261011-001.json",
       "blob": "7ff5ca15d96c142dfcac1ba49e935a043a1f9453"
+    },
+    {
+      "path": "comunicados/governanca-geral/historico/SCIV-PROVA-PRJ000021-20261011-002.json",
+      "blob": "5154945382f01f33bc70bbf27affe5396d26ad37"
     }
   ],
-  "pending_messages": [
-    "SCIV-PROVA-PRJ000021-20261011-002"
+  "pending_messages": [],
+  "active_replies": [
+    "SCIV-OBJECTION-PRJ000021-20261011-002"
   ],
-  "active_replies": [],
-  "archive_limit": "Administrative treatment/archive under human issue #5 mandate, not new specialized reply, UI validation, runtime PEP authorization, or substantive effects."
+  "archive_limit": "Administrative treatment/archive under human issue #5 mandate, not new specialized reply, UI validation, runtime PEP authorization, or substantive effects.",
+  "last_specialized_treatment": {
+    "message_id": "SCIV-PROVA-PRJ000021-20261011-002",
+    "reply_id": "SCIV-OBJECTION-PRJ000021-20261011-002",
+    "reply_commit": "5953a1f304e2b3ba9d0b53cb57ddbcea3a4596ff",
+    "reply_blob": "5659f78ef82418779f943be5e9d207c5f9d045b6",
+    "treatment_path": "comunicados/tratamentos/SCIV-TRATAMENTO-002-INBOX.json",
+    "treatment_blob": "0914a9fb4689b4f7e753d7d8e001b6fbe302a13e",
+    "receipt_path": "comunicados/arquivamento/inbox/SCIV-PROVA-PRJ000021-20261011-002.json",
+    "receipt_blob": "c269a92e81d8a33c9b451ee6427a8173af81f7b7",
+    "original_message_sha256": "8e6449ae8af33ec193a87e9dc0ee4205cc654d761ffb481fb7f731df4582d0ae",
+    "original_blob": "5154945382f01f33bc70bbf27affe5396d26ad37",
+    "state": "DOCUMENTARY_ARCHIVE_OBJECTION_NO_RUNTIME_EFFECT",
+    "archive_parent_commit": "5953a1f304e2b3ba9d0b53cb57ddbcea3a4596ff"
+  }
 }

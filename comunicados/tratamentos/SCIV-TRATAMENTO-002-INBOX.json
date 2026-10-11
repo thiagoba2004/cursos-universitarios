@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "ADMINISTRATIVE_DOCUMENTARY_NOT_AUTHORIZATION",
+  "project_id": "PRJ-000021",
+  "authority": "Pedido humano explícito para responder e arquivar SCIV-PROVA-PRJ000021-20261011-002, condicionado a confirmação; ADR-GOV-0009; issue #5 como fundamento normativo",
+  "observed_ref": "feat/sciv-sob-demanda-issue-5-20261011",
+  "observed_commit": "5953a1f304e2b3ba9d0b53cb57ddbcea3a4596ff",
+  "repository": "thiagoba2004/cursos-universitarios",
+  "observed_at": "2026-10-11T06:41:05.963Z",
+  "actor": "PRJ-000021_IA_ESPECIALIZADA",
+  "direction": "inbox",
+  "message_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "message_sha256": "8e6449ae8af33ec193a87e9dc0ee4205cc654d761ffb481fb7f731df4582d0ae",
+  "message_blob_sha": "5154945382f01f33bc70bbf27affe5396d26ad37",
+  "original_publication_commit": "47d5dd0d4deca92e3d752e5ec161ee9e020470a8",
+  "declared_source_version": "7c8384d51f82409150bc8fe0c7bdcf05d8ff883d",
+  "correlation_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "reply_id": "SCIV-OBJECTION-PRJ000021-20261011-002",
+  "reply_in_reply_to": "SCIV-PROVA-PRJ000021-20261011-002",
+  "reply_correlation_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "reply_sha256": "232053eee10d9b8db6d6a58d242fa35eec05a472a1af35504e9440f9ef7db5dc",
+  "reply_blob_sha": "5659f78ef82418779f943be5e9d207c5f9d045b6",
+  "reply_commit": "5953a1f304e2b3ba9d0b53cb57ddbcea3a4596ff",
+  "reply_path": "comunicados/ia-especializada/mensagens/SCIV-OBJECTION-PRJ000021-20261011-002.json",
+  "classification": {
+    "sensitivity": "S0_PUBLICO",
+    "surface": "P2_GIT_PUBLICO_REPOSITORIO"
+  },
+  "substantive_pending": false,
+  "execution_verified": false,
+  "decision": "OBJECTION registrada e confirmada: ensaio de descoberta espontânea do comunicado 002 perdeu vigência pelo ADR-GOV-0009. Arquivar somente a entrada documental após persistência real da resposta. Nenhuma execução substantiva, validação nativa ou deduplicação intersessões foi comprovada.",
+  "basis": [
+    "O destinatário PRJ-000021, ID 002, classificação S0 e correlação foram conferidos na versão exata da origem.",
+    "SHA-256 calculado sobre os 2104 bytes da origem; Git blob preservado e publicação identificada.",
+    "A resposta OBJECTION002 foi publicada em commit independente, lida integralmente e sua correlação verificada antes do arquivo.",
+    "ADR-GOV-0009 prevalece sobre o teste antigo de leitura espontânea; a leitura atual decorreu de solicitação humana explícita.",
+    "A INQUIRY histórica não contém trabalho substantivo pendente. Instalação nativa e ensaio de conversa real permanecem pendências humanas independentes em SCIV_STATE.",
+    "GVC/PEP não foram promovidos; arquivamento administrativo não comprova conclusão operacional."
+  ]
+}
