@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/thiagoba2004/governanca-geral-modelos-ia/blob/main/comunicados/protocolo/comunicado.schema.json",
+  "title": "SCIV Message v1.0",
+  "description": "Contrato estrutural. Validação semântica, autorização e proveniência são gates separados.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "message_id",
+    "source",
+    "target",
+    "message_type",
+    "created_at",
+    "classification",
+    "source_version",
+    "correlation_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "message_id": {
+      "type": "string",
+      "pattern": "^SCIV-[A-Z0-9-]{5,64}$"
+    },
+    "source": {
+      "type": "string",
+      "pattern": "^(G0|PRJ-[0-9]{6})$"
+    },
+    "target": {
+      "type": "string",
+      "pattern": "^(G0|PRJ-[0-9]{6})$"
+    },
+    "message_type": {
+      "enum": [
+        "DIRECTIVE",
+        "REQUEST",
+        "ALERT",
+        "INQUIRY",
+        "OBJECTION",
+        "RESULT",
+        "ACK"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "authority_ref": {
+      "type": "string",
+      "minLength": 3
+    },
+    "basis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim",
+          "reference"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string",
+            "minLength": 5
+          },
+          "reference": {
+            "type": "string",
+            "minLength": 3
+          },
+          "verified_commit": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action_id",
+        "operation"
+      ],
+      "properties": {
+        "action_id": {
+          "type": "string",
+          "minLength": 3
+        },
+        "operation": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{2,63}$"
+        },
+        "parameters_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "expected_result": {
+      "type": "string"
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "risk_class": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sensitivity",
+        "surface"
+      ],
+      "properties": {
+        "sensitivity": {
+          "enum": [
+            "S0_PUBLICO",
+            "S1_INTERNO_NAO_SENSIVEL",
+            "S2_CONFIDENCIAL",
+            "S3_ALTAMENTE_SENSIVEL",
+            "S4_SEGREDO_CRITICO"
+          ]
+        },
+        "surface": {
+          "enum": [
+            "P0_COFRE_EXTERNO",
+            "P1_GIT_PRIVADO",
+            "P2_GIT_PUBLICO_REPOSITORIO",
+            "P3_PUBLICO_SITE"
+          ]
+        }
+      }
+    },
+    "source_version": {
+      "type": "string",
+      "minLength": 7,
+      "description": "Commit esperado/proveniência, checado fora do schema; placeholder de exemplo não admite execução."
+    },
+    "correlation_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "in_reply_to": {
+      "type": "string",
+      "pattern": "^SCIV-[A-Z0-9-]{5,64}$"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "Indicação declaratória; estado efetivo somente via recibo verificável."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "message_type": {
+            "enum": [
+              "DIRECTIVE",
+              "REQUEST"
+            ]
+          }
+        },
+        "required": [
+          "message_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "authority_ref",
+          "basis",
+          "action",
+          "expected_result",
+          "acceptance_criteria",
+          "risk_class"
+        ],
+        "properties": {
+          "basis": {
+            "minItems": 1
+          },
+          "acceptance_criteria": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "message_type": {
+            "enum": [
+              "OBJECTION",
+              "RESULT",
+              "ACK"
+            ]
+          }
+        },
+        "required": [
+          "message_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "in_reply_to"
+        ]
+      }
+    }
+  ]
+}
