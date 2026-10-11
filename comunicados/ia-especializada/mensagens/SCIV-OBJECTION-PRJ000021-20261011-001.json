@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "message_id": "SCIV-OBJECTION-PRJ000021-20261011-001",
+  "source": "PRJ-000021",
+  "target": "G0",
+  "message_type": "OBJECTION",
+  "in_reply_to": "SCIV-PILOTO-PRJ000021-20261011-001",
+  "correlation_id": "SCIV-PILOTO-PRJ000021-20261011",
+  "created_at": "2026-10-11T03:35:14.376Z",
+  "source_version": "841241ce0b6e1b311e01c2f60503066a9f719ca8",
+  "classification": {
+    "sensitivity": "S0_PUBLICO",
+    "surface": "P2_GIT_PUBLICO_REPOSITORIO"
+  },
+  "risk_class": "LOW",
+  "status": "OBJECTION_FOR_CRITICAL_REVIEW_NOT_OPERATIONAL_AUTHORIZATION",
+  "basis": [
+    {
+      "claim": "Objeção principal: um recibo DISCOVERED atesta apenas descoberta ou transporte de uma mensagem; não comprova validade, competência, decisão humana, autorização operacional ou aprovação pelo PEP. Rejeita-se a tese de que DISCOVERED autoriza execução.",
+      "reference": "comunicados/governanca-geral/README.md"
+    },
+    {
+      "claim": "O comunicado de origem é uma INQUIRY para PRJ-000021 e declara PUBLISHED_FOR_CRITICAL_REVIEW_NOT_AUTHORIZED. Não especifica action nem authority_ref; isso é compatível com uma pergunta, mas não concede autorização de efeitos.",
+      "reference": "comunicados/governanca-geral/mensagens/SCIV-PILOTO-PRJ000021-20261011-001.json"
+    },
+    {
+      "claim": "Competência: G0 é o emissor declarado, mas identificação de source, PRJ e commit não prova autoridade por si. Uma execução futura exige mandato válido do decisor competente, avaliação crítica, classificação e controles GVC/PEP aplicáveis.",
+      "reference": "comunicados/governanca-geral/README.md"
+    },
+    {
+      "claim": "Risco: confundir recebimento com autorização produziria possibilidade de ações indevidas, alterações de permissões, gastos ou trabalho substantivo sem mandato. A classificação LOW é atribuída apenas à análise documental e à resposta não executiva deste piloto.",
+      "reference": "comunicados/governanca-geral/README.md"
+    },
+    {
+      "claim": "Viabilidade: a leitura, a avaliação crítica e a objeção correlacionada são factíveis. A autorização humana atual restringe-se à persistência desta resposta SCIV por ferramenta GitHub autorizada; não autoriza alteração de outros arquivos, configuração, autorização de novas ações ou execução da matéria examinada.",
+      "reference": "AGENTS.md"
+    },
+    {
+      "claim": "Requisito, impacto e correção: preservar as etapas DISCOVERED, VALIDATED e AUTHORIZED como estados distintos; submeter possíveis efeitos a fundamento, competência, escopo, classificação, autorização específica e PEP. Decisão sobre quaisquer efeitos futuros compete à autoridade humana ou de governança definida pelas políticas aplicáveis.",
+      "reference": "comunicados/ia-especializada/README.md"
+    },
+    {
+      "claim": "Deduplicação: consultas repetidas nesta conversa recuperaram o mesmo ID, correlação, bytes e blob Git; isso prova estabilidade documental local, mas não prova um mecanismo persistente de deduplicação entre sessões.",
+      "reference": "comunicados/governanca-geral/mensagens/SCIV-PILOTO-PRJ000021-20261011-001.json"
+    }
+  ],
+  "evidence_refs": [
+    "sha256:c799f399347c7c0da4b4796577b8b8f0e211013dcb454194aa382a8e45135dc3",
+    "git-blob:94d35770a866453fc18e7aad74da73b212fe292c",
+    "git:thiagoba2004/cursos-universitarios@feat/sciv-essencial-piloto-20261011:comunicados/governanca-geral/mensagens/SCIV-PILOTO-PRJ000021-20261011-001.json",
+    "original-source-version:fe3030a5a00f3317f9dedf322177f3b889f03fbb",
+    "comunicados/governanca-geral/README.md",
+    "comunicados/ia-especializada/README.md",
+    "comunicados/comunicado.schema.json"
+  ],
+  "expected_result": "Parecer de objeção fundamentada recebido como documento, sem promover DISCOVERED a AUTHORIZED. Esta publicação não executa ações substantivas, não aprova gasto, não altera permissões e não aceita gates automaticamente.",
+  "acceptance_criteria": [
+    "Um único arquivo de resposta OBJECTION correlacionada no caminho local SCIV e na branch indicada.",
+    "Evidência do comunicado original preservada com SHA-256 de bytes, blob Git e caminho.",
+    "Publicação confirmada por commit e leitura independente do arquivo criado.",
+    "Nenhuma mudança fora do arquivo desta resposta."
+  ]
+}
