@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "ADMINISTRATIVE_DOCUMENTARY_NOT_AUTHORIZATION",
+  "project_id": "PRJ-000021",
+  "repository": "thiagoba2004/cursos-universitarios",
+  "actor": "G0",
+  "executor": "Governanca Geral via GitHub sob sistematica humana SCIV bilateral",
+  "direction": "outbox",
+  "authority": "Aprovacao humana da sistematica SCIV Sob Demanda com arquivamento bilateral; continuidade da recepcao da resposta especializada 002 nesta conversa",
+  "observed_ref": "feat/sciv-sob-demanda-issue-5-20261011",
+  "observed_commit": "3eb4c0513cf06669f0d6e8b98cac16b5912c9877",
+  "observed_at": "2026-10-11T10:59:19.520Z",
+  "classification": {
+    "sensitivity": "S0_PUBLICO",
+    "surface": "P2_GIT_PUBLICO_REPOSITORIO"
+  },
+  "message_id": "SCIV-OBJECTION-PRJ000021-20261011-002",
+  "message_blob_sha": "5659f78ef82418779f943be5e9d207c5f9d045b6",
+  "message_sha256": "232053eee10d9b8db6d6a58d242fa35eec05a472a1af35504e9440f9ef7db5dc",
+  "correlation_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "in_reply_to": "SCIV-PROVA-PRJ000021-20261011-002",
+  "original_message_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "original_archive_path": "comunicados/governanca-geral/historico/SCIV-PROVA-PRJ000021-20261011-002.json",
+  "reply_publication_commit": "5953a1f304e2b3ba9d0b53cb57ddbcea3a4596ff",
+  "substantive_pending": false,
+  "execution_verified": false,
+  "decision": "CIENCIA_E_ACOLHIMENTO_DA_OBJECAO: O ensaio legado de descoberta espontanea foi superado por ADR-GOV-0009. A comunicacao tem tratamento documental encerrado; nenhuma autorizacao operacional ou homologacao de leitura automatica decorre dela. Arquivar a resposta apos readback.",
+  "basis": [
+    "Arquivo de resposta encontrado na outbox PRJ-000021, com source/target/ID/in_reply_to/correlation_id e blob Git compatíveis com recibo de tratamento da entrada.",
+    "Historico do comunicado original 002 foi arquivado pela IA especializada com justificativa e recibo; a origem e a resposta permanecem recuperaveis.",
+    "A objeção harmoniza o protocolo com SCIV Sob Demanda e preserva GVC/PEP sem executar a hipótese superada.",
+    "Não existem atividades substantivas para executar na INQUIRY 002; verificacao de instrucoes nativas e teste conversacional real permanecem gates independentes.",
+    "Aprovacao do fluxo bilateral pelo titular e sua devolutiva a Governança Geral não promovem os gates A6/B8/F2/F3, PEP live ou merge."
+  ]
+}
