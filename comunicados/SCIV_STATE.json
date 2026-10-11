@@ -9,7 +9,7 @@
   "outbox": "comunicados/ia-especializada/mensagens",
   "message_id": "SCIV-PILOTO-PRJ000021-20261011-001",
   "message_sha256": "c799f399347c7c0da4b4796577b8b8f0e211013dcb454194aa382a8e45135dc3",
-  "state": "ON_DEMAND_BILATERAL_ARCHIVES_MAIN_INTEGRATED_NATIVE_ATTESTED_MAIN_SMOKE_PENDING",
+  "state": "ON_DEMAND_BILATERAL_ARCHIVES_MAIN_INTEGRATED_FUNCTIONAL_HUMAN_ACCEPTED",
   "PILOT_REPOSITORY_PUBLICATION_VERIFIED": "VERIFIED",
   "SPECIALIZED_AI_REAL_READ_VERIFIED": "HISTORICAL_USER_EVIDENCE_ISSUE4_NOT_ON_DEMAND_ACCEPTANCE",
   "SPECIALIZED_AI_REPLY_PERSISTENCE_VERIFIED": "VERIFIED_OBJECTION001_COMMIT_41c09eb_WITH_READBACK_NOT_NEW_REPLY",
@@ -75,8 +75,8 @@
   "inbox_history": "comunicados/governanca-geral/historico",
   "outbox_history": "comunicados/ia-especializada/historico",
   "NATIVE_CHATGPT_INSTRUCTIONS_UPDATED": "HUMAN_ATTESTED_NOT_INDEPENDENTLY_VERIFIED",
-  "NATIVE_INSTRUCTIONS_PENDING": true,
-  "REAL_CONVERSATION_VALIDATION_PENDING": true,
+  "NATIVE_INSTRUCTIONS_PENDING": false,
+  "REAL_CONVERSATION_VALIDATION_PENDING": false,
   "MERGE_EXECUTED": true,
   "ON_DEMAND_MODEL_VERSIONED": "VERSIONED_ADAPTER_READBACK_VERIFIED",
   "BILATERAL_ARCHIVE_TESTED": "OFFLINE_37_TESTS_PLUS_REAL_GITHUB_ENGINEERING_CYCLE",
@@ -148,9 +148,28 @@
     },
     "type": "FAST_FORWARD",
     "checkpoint": "governanca/recebimentos/2026-10-11-prj-000021-sciv-integracao-main.md",
-    "native_current_main_adapter": "MANUAL_INSTALL_PENDING",
-    "main_conversation_validation": "PENDING_HUMAN_SMOKE_TEST",
+    "native_current_main_adapter": "HUMAN_ATTESTED_NOT_INDEPENDENTLY_VERIFIED",
+    "main_conversation_validation": "FUNCTIONAL_ACCEPTED_HUMAN_ATTESTED_TOOL_TRACE_UNVERIFIED",
     "previous_native_attestation": "HUMAN_ATTESTED_NOT_INDEPENDENTLY_VERIFIED",
     "previous_negative_test": "HUMAN_ATTESTED_NEGATIVE_TEST_TOOL_TRACE_NOT_VERIFIED"
+  },
+  "FUNCTIONAL_ACCEPTANCE": {
+    "status": "HUMAN_ATTESTED",
+    "confirmed_date": "2026-10-11",
+    "decision_ref": "https://github.com/thiagoba2004/governanca-geral-modelos-ia/issues/5#issuecomment-6110507634",
+    "native_main_instructions": "HUMAN_ATTESTED_NOT_INDEPENDENTLY_VERIFIED",
+    "negative_test_no_sciv_read": "HUMAN_OBSERVED_NOT_INDEPENDENT_TOOL_TRACE_VERIFIED",
+    "explicit_read_test": "RESPONSE_CONTENT_GITHUB_INDEPENDENTLY_VERIFIED_TOOL_TRACE_UNVERIFIED",
+    "independent_tool_trace": "UNVERIFIED",
+    "scope": "ISSUE_5_SCIV_ON_DEMAND_BILATERAL_ARCHIVE_PILOT_ONLY",
+    "exclusions": [
+      "A6",
+      "B8",
+      "F2",
+      "F3",
+      "PEP_LIVE",
+      "GLOBAL_RUNTIME"
+    ],
+    "historical_runtime": "4 FAIL / 18 ERROR; 95 methods not executed"
   }
 }
