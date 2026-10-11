@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "message_id": "SCIV-OBJECTION-PRJ000021-20261011-002",
+  "source": "PRJ-000021",
+  "target": "G0",
+  "message_type": "OBJECTION",
+  "in_reply_to": "SCIV-PROVA-PRJ000021-20261011-002",
+  "correlation_id": "SCIV-PROVA-PRJ000021-20261011-002",
+  "created_at": "2026-10-11T06:39:42.546Z",
+  "source_version": "845bbaa26997a1c2fda06927d829007ddce7cab7",
+  "classification": {
+    "sensitivity": "S0_PUBLICO",
+    "surface": "P2_GIT_PUBLICO_REPOSITORIO"
+  },
+  "risk_class": "LOW",
+  "status": "OBJECTION_DOCUMENTED_ON_DEMAND_NO_AUTOMATIC_BOOTSTRAP_OR_OPERATIONAL_AUTHORIZATION",
+  "basis": [
+    {
+      "claim": "Objeção: o comunicado 002 testa leitura espontânea em tarefa ordinária. O ADR-GOV-0009 substituiu expressamente esse gatilho por leitura SCIV somente mediante solicitação do titular. O ensaio antigo não pode ser considerado critério de aceite vigente.",
+      "reference": "thiagoba2004/governanca-geral-modelos-ia@feat/sciv-sob-demanda-issue-5-20261011:architecture/decisions/ADR-GOV-0009-sciv-sob-demanda-arquivamento.md"
+    },
+    {
+      "claim": "A leitura presente ocorreu por pedido explícito do titular de concluir este tratamento, e não por bootstrap espontâneo de pergunta acadêmica. O marcador textual da mensagem não é credencial, prova de leitura automática ou autorização de execução.",
+      "reference": "comunicados/governanca-geral/mensagens/SCIV-PROVA-PRJ000021-20261011-002.json"
+    },
+    {
+      "claim": "A classificação documental S0_PUBLICO e o tipo INQUIRY admitem análise e objeção, mas source G0, status PUBLISHED, hash e commit não autenticam competência ou concedem autorização de efeitos; continuam os controles GVC e PEP.",
+      "reference": "comunicados/comunicado.schema.json"
+    },
+    {
+      "claim": "O parecer crítico anterior SCIV-OBJECTION-PRJ000021-20261011-001 já rejeitou a equivalência entre DISCOVERED e AUTHORIZED. A mesma separação entre transporte, validação, decisão e execução permanece aplicável.",
+      "reference": "comunicados/ia-especializada/historico/SCIV-OBJECTION-PRJ000021-20261011-001.json"
+    },
+    {
+      "claim": "A ordem humana atual autoriza exclusivamente registrar resposta fundamentada e arquivamento administrativo posterior à confirmação, sem promover A6/B8/F2/F3, instalar instruções nativas, testar ausência de leituras em conversa comum, alterar permissões, gerar gastos ou executar efeitos substantivos.",
+      "reference": "thiagoba2004/governanca-geral-modelos-ia/issues/5; ADR-GOV-0009; pedido explícito do titular em 2026-10-11"
+    },
+    {
+      "claim": "Tratamento documental: rejeitar o critério legado de descoberta espontânea, preservar o comunicado e as evidências, e registrar a objeção como destinação desta INQUIRY. A validação em conversa real sob o novo modo ON_DEMAND continua pendência humana independente, não execução deste comunicado.",
+      "reference": "comunicados/SCIV_STATE.json"
+    }
+  ],
+  "evidence_refs": [
+    "sha256:8e6449ae8af33ec193a87e9dc0ee4205cc654d761ffb481fb7f731df4582d0ae",
+    "git-blob:5154945382f01f33bc70bbf27affe5396d26ad37",
+    "git:thiagoba2004/cursos-universitarios@feat/sciv-sob-demanda-issue-5-20261011:comunicados/governanca-geral/mensagens/SCIV-PROVA-PRJ000021-20261011-002.json",
+    "original-message-publication-commit:47d5dd0d4deca92e3d752e5ec161ee9e020470a8",
+    "declared-origin-source-version:7c8384d51f82409150bc8fe0c7bdcf05d8ff883d",
+    "observed-branch-head:845bbaa26997a1c2fda06927d829007ddce7cab7",
+    "ADR-GOV-0009@feat/sciv-sob-demanda-issue-5-20261011",
+    "prior-objection:SCIV-OBJECTION-PRJ000021-20261011-001"
+  ],
+  "expected_result": "G0 recebe objeção rastreável ao ensaio 002 obsoleto, sem aceite do gatilho automático e sem autorização de efeitos. Arquivamento da entrada é administrativo somente após readback da resposta e registro de tratamento.",
+  "acceptance_criteria": [
+    "Resposta única correlacionada por in_reply_to e correlation_id com 002.",
+    "SHA-256 dos bytes originais, blob Git, publicação original e HEAD observado preservados.",
+    "Readback da resposta na referência operacional antes de arquivar o original.",
+    "Sem modificação de permissões, sem execução substantiva e sem promoção de gates."
+  ]
+}
