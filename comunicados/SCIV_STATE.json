@@ -9,21 +9,21 @@
   "outbox": "comunicados/ia-especializada/mensagens",
   "message_id": "SCIV-PILOTO-PRJ000021-20261011-001",
   "message_sha256": "c799f399347c7c0da4b4796577b8b8f0e211013dcb454194aa382a8e45135dc3",
-  "state": "ON_DEMAND_BILATERAL_ARCHIVES_COMPLETE_PILOT_ONLY_NATIVE_ATTESTED",
+  "state": "ON_DEMAND_BILATERAL_ARCHIVES_MAIN_INTEGRATED_NATIVE_ATTESTED_MAIN_SMOKE_PENDING",
   "PILOT_REPOSITORY_PUBLICATION_VERIFIED": "VERIFIED",
   "SPECIALIZED_AI_REAL_READ_VERIFIED": "HISTORICAL_USER_EVIDENCE_ISSUE4_NOT_ON_DEMAND_ACCEPTANCE",
   "SPECIALIZED_AI_REPLY_PERSISTENCE_VERIFIED": "VERIFIED_OBJECTION001_COMMIT_41c09eb_WITH_READBACK_NOT_NEW_REPLY",
   "PEP": "LIVE_RUNTIME_STILL_DENIED",
   "native_instructions_changed": false,
   "A6_promoted": false,
-  "main_merge": false,
+  "main_merge": true,
   "automations": false,
   "new_spending": false,
   "publication_commit": "c6bd15945bdfbb4edeb3c55160d1a7c173c3acb5",
   "message_blob_sha": "94d35770a866453fc18e7aad74da73b212fe292c",
   "confirmation": "Independent connector readback: nine exact blobs/bytes and branch ref; default main preserved",
   "runtime_http_read": "BLOCKED_GITHUB_UNAVAILABLE",
-  "operational_ref": "feat/sciv-sob-demanda-issue-5-20261011",
+  "operational_ref": "main",
   "bootstrap": {
     "mode": "ON_DEMAND",
     "authority": "issue #5 / ADR-GOV-0009",
@@ -77,10 +77,10 @@
   "NATIVE_CHATGPT_INSTRUCTIONS_UPDATED": "HUMAN_ATTESTED_NOT_INDEPENDENTLY_VERIFIED",
   "NATIVE_INSTRUCTIONS_PENDING": true,
   "REAL_CONVERSATION_VALIDATION_PENDING": true,
-  "MERGE_EXECUTED": false,
+  "MERGE_EXECUTED": true,
   "ON_DEMAND_MODEL_VERSIONED": "VERSIONED_ADAPTER_READBACK_VERIFIED",
   "BILATERAL_ARCHIVE_TESTED": "OFFLINE_37_TESTS_PLUS_REAL_GITHUB_ENGINEERING_CYCLE",
-  "PILOT_APPLIED": "ENGINEERING_BRANCH_ONLY_ARCHIVE_AND_ADAPTER_READBACK_VERIFIED",
+  "PILOT_APPLIED": "MAIN_INTEGRATED_ARCHIVES_REMOTE_READBACK_VERIFIED",
   "archive_publication_commit": "8d2772e75317ad96ae8e0f6b7b75bae2f9d52cd5",
   "treatment_publication_commit": "f6df049b556bee3dccdb8a5bcb3f6834675ad520",
   "archives": [
@@ -133,5 +133,24 @@
     "receipt_blob": "686b4845ba3394ac0281c99c4c679642a9f240a7",
     "state": "DOCUMENTARY_OUTBOX_ARCHIVE_NO_RUNTIME_EFFECT"
   },
-  "last_governance_ack_time": "2026-10-11T10:59:19.520Z"
+  "last_governance_ack_time": "2026-10-11T10:59:19.520Z",
+  "integration": {
+    "confirmed_heads": {
+      "governanca": "2a684f226376f53ada27325b74537b6533cdb889",
+      "cursos": "285db2ca13b2d09564273e96c8a4209079993474",
+      "gerador": "2681116c0d976d7c03ee8463c39e06f279eae032",
+      "integration_types": {
+        "governanca": "TWO_PARENT_MERGE_COMMIT",
+        "cursos": "FAST_FORWARD",
+        "gerador": "FAST_FORWARD"
+      },
+      "remote_confirmed": true
+    },
+    "type": "FAST_FORWARD",
+    "checkpoint": "governanca/recebimentos/2026-10-11-prj-000021-sciv-integracao-main.md",
+    "native_current_main_adapter": "MANUAL_INSTALL_PENDING",
+    "main_conversation_validation": "PENDING_HUMAN_SMOKE_TEST",
+    "previous_native_attestation": "HUMAN_ATTESTED_NOT_INDEPENDENTLY_VERIFIED",
+    "previous_negative_test": "HUMAN_ATTESTED_NEGATIVE_TEST_TOOL_TRACE_NOT_VERIFIED"
+  }
 }
