@@ -22,5 +22,19 @@
   "publication_commit": "c6bd15945bdfbb4edeb3c55160d1a7c173c3acb5",
   "message_blob_sha": "94d35770a866453fc18e7aad74da73b212fe292c",
   "confirmation": "Independent connector readback: nine exact blobs/bytes and branch ref; default main preserved",
-  "runtime_http_read": "BLOCKED_GITHUB_UNAVAILABLE"
+  "runtime_http_read": "BLOCKED_GITHUB_UNAVAILABLE",
+  "operational_ref": "feat/sciv-essencial-piloto-20261011",
+  "bootstrap": {
+    "scope": "VERSIONED_INSTRUCTIONS_ONLY_NO_NATIVE_SYNC",
+    "authority": "issue #4 comment 6105103024 and human execution mandate 2026-10-11",
+    "adapter": "adaptadores/chatgpt/INSTRUCOES.md",
+    "BOOTSTRAP_INSTRUCTIONS_VERSIONED": "VERSIONED_ARTIFACT_CONFIRM_BY_COMMIT_READBACK",
+    "NATIVE_PROJECT_INSTRUCTIONS_INSTALLED": "NOT_VERIFIED",
+    "AUTOMATIC_READ_ON_PROCESSED_CONVERSATION_VERIFIED": "NOT_VERIFIED",
+    "CROSS_SESSION_DEDUPLICATION_VERIFIED": "NOT_VERIFIED",
+    "existing_reply": "SCIV-OBJECTION-PRJ000021-20261011-001",
+    "existing_reply_commit": "41c09ebea4c6267301dd2607c122f47a09052f9b",
+    "exchange_status_notice": "Earlier top-level exchange fields describe the original publication checkpoint; real reply is present at the commit above. Bootstrap gates remain separate.",
+    "after_authorized_integration": "Update operational_ref/state on default branch and regenerate/compare native instructions; no merge performed"
+  }
 }
