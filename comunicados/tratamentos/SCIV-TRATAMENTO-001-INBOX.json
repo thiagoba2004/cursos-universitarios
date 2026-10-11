@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "ADMINISTRATIVE_DOCUMENTARY_NOT_AUTHORIZATION",
+  "project_id": "PRJ-000021",
+  "authority": "Human mandate issue #5; engineering only; not an operational PEP grant",
+  "observed_commit": "47d5dd0d4deca92e3d752e5ec161ee9e020470a8",
+  "observed_ref": "feat/sciv-essencial-piloto-20261011",
+  "repository": "thiagoba2004/cursos-universitarios",
+  "substantive_pending": false,
+  "classification": {
+    "sensitivity": "S0_PUBLICO",
+    "surface": "P2_GIT_PUBLICO_REPOSITORIO"
+  },
+  "execution_verified": false,
+  "actor": "CODEX_ENGINEERING_UNDER_ISSUE_5",
+  "direction": "inbox",
+  "message_id": "SCIV-PILOTO-PRJ000021-20261011-001",
+  "message_sha256": "c799f399347c7c0da4b4796577b8b8f0e211013dcb454194aa382a8e45135dc3",
+  "reply_id": "SCIV-OBJECTION-PRJ000021-20261011-001",
+  "reply_sha256": "ea284e2d5080c019b26f83c5004726508efa086aacbf9816e4a946c4ea84d3c9",
+  "decision": "Destinação documental OBJECTION já publicada pela IA Especializada; nenhuma ação substantiva autorizada/executada. Arquivamento administrativo do ensaio 001 sob o mandato humano da issue #5. Não é nova resposta atribuída à IA.",
+  "basis": [
+    "Origem é INQUIRY inofensiva: pede avaliação crítica da tese DISCOVERED autoriza execução.",
+    "Objeção real 001 rejeita a tese com sete fundamentos, correlação e sha256 da origem.",
+    "Bytes da resposta lidos independentemente no commit 47d5dd0; publicação original 41c09eb preservada.",
+    "O ensaio documental recebeu destinação rastreável; futuras autorizações permanecem dependentes do fluxo próprio GVC/PEP."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "ADMINISTRATIVE_DOCUMENTARY_NOT_AUTHORIZATION",
+  "project_id": "PRJ-000021",
+  "authority": "Human mandate issue #5; engineering only; not an operational PEP grant",
+  "observed_commit": "47d5dd0d4deca92e3d752e5ec161ee9e020470a8",
+  "observed_ref": "feat/sciv-essencial-piloto-20261011",
+  "repository": "thiagoba2004/cursos-universitarios",
+  "substantive_pending": false,
+  "classification": {
+    "sensitivity": "S0_PUBLICO",
+    "surface": "P2_GIT_PUBLICO_REPOSITORIO"
+  },
+  "execution_verified": false,
+  "actor": "G0",
+  "executor": "Codex under explicit issue #5 engineering mandate",
+  "direction": "outbox",
+  "message_id": "SCIV-OBJECTION-PRJ000021-20261011-001",
+  "message_sha256": "ea284e2d5080c019b26f83c5004726508efa086aacbf9816e4a946c4ea84d3c9",
+  "decision": "Ciência e acolhimento fundamentado da objeção: DISCOVERED não autoriza execução. Preservar GVC/PEP, não executar efeitos; arquivar administrativamente a resposta tratada.",
+  "basis": [
+    "Verificada a mesma origem, correlação e evidência sha256; leitura remota nesta execução.",
+    "A objeção é consistente com ADR-0006 decisões 6–10, ADR-0008 decisão 7 e ADR-0009.",
+    "Não existe ação produtiva a concluir nesta INQUIRY; resposta não concede autorização, promove gates ou atesta exactly-once.",
+    "002 é outro ensaio sem resposta e continuará ativo; não será abrangido pelo arquivamento."
+  ]
+}
