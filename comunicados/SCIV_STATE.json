@@ -9,7 +9,7 @@
   "outbox": "comunicados/ia-especializada/mensagens",
   "message_id": "SCIV-PILOTO-PRJ000021-20261011-001",
   "message_sha256": "c799f399347c7c0da4b4796577b8b8f0e211013dcb454194aa382a8e45135dc3",
-  "state": "ON_DEMAND_VERSIONED_ARCHIVE_ENGINEERING_PENDING",
+  "state": "ON_DEMAND_VERSIONED_BILATERAL_ARCHIVE_GITHUB_VERIFIED_NATIVE_PENDING",
   "PILOT_REPOSITORY_PUBLICATION_VERIFIED": "VERIFIED",
   "SPECIALIZED_AI_REAL_READ_VERIFIED": "HISTORICAL_USER_EVIDENCE_ISSUE4_NOT_ON_DEMAND_ACCEPTANCE",
   "SPECIALIZED_AI_REPLY_PERSISTENCE_VERIFIED": "VERIFIED_OBJECTION001_COMMIT_41c09eb_WITH_READBACK_NOT_NEW_REPLY",
@@ -77,5 +77,25 @@
   "NATIVE_CHATGPT_INSTRUCTIONS_UPDATED": "HUMAN_PENDING",
   "NATIVE_INSTRUCTIONS_PENDING": true,
   "REAL_CONVERSATION_VALIDATION_PENDING": true,
-  "MERGE_EXECUTED": false
+  "MERGE_EXECUTED": false,
+  "ON_DEMAND_MODEL_VERSIONED": "VERSIONED_ADAPTER_READBACK_VERIFIED",
+  "BILATERAL_ARCHIVE_TESTED": "OFFLINE_37_TESTS_PLUS_REAL_GITHUB_ENGINEERING_CYCLE",
+  "PILOT_APPLIED": "ENGINEERING_BRANCH_ONLY_ARCHIVE_AND_ADAPTER_READBACK_VERIFIED",
+  "archive_publication_commit": "8d2772e75317ad96ae8e0f6b7b75bae2f9d52cd5",
+  "treatment_publication_commit": "f6df049b556bee3dccdb8a5bcb3f6834675ad520",
+  "archives": [
+    {
+      "path": "comunicados/governanca-geral/historico/SCIV-PILOTO-PRJ000021-20261011-001.json",
+      "blob": "94d35770a866453fc18e7aad74da73b212fe292c"
+    },
+    {
+      "path": "comunicados/ia-especializada/historico/SCIV-OBJECTION-PRJ000021-20261011-001.json",
+      "blob": "7ff5ca15d96c142dfcac1ba49e935a043a1f9453"
+    }
+  ],
+  "pending_messages": [
+    "SCIV-PROVA-PRJ000021-20261011-002"
+  ],
+  "active_replies": [],
+  "archive_limit": "Administrative treatment/archive under human issue #5 mandate, not new specialized reply, UI validation, runtime PEP authorization, or substantive effects."
 }
