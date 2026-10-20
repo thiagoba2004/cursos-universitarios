@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "message_id": "SCIV-F007-PRJ000021-20261020-001",
+  "source": "G0",
+  "target": "PRJ-000021",
+  "message_type": "INQUIRY",
+  "created_at": "2026-10-20T21:27:34.229Z",
+  "authority_ref": "EA-000000-000034/F007-B; pedido humano expresso de 2026-10-20",
+  "basis": [
+    {
+      "claim": "O titular confirmou a instalação manual das Instruções nativas dos cinco Projetos ChatGPT e solicitou novo teste de recebimento em cada IA Especializada.",
+      "reference": "Pedido humano expresso, conversa de 2026-10-20"
+    },
+    {
+      "claim": "A EA-000000-000034/F007-B determina novo teste de recebimento A6/B8 correlacionado ao relatório histórico, sem republicar resultados passados.",
+      "reference": "G0:estrategias/EA-000000-000034-implantacao-sciv-sob-demanda-novos-projetos.md"
+    },
+    {
+      "claim": "O relatório de 10/10 é baseline documental, não comprovante de leitura ou aceite da nova sessão.",
+      "reference": "governanca/recebimentos/2026-10-10-prj-000021-gate-a6.md"
+    }
+  ],
+  "expected_result": "Teste diagnóstico novo de recebimento operacional A6 no próprio ChatGPT Projeto PRJ-000021 (Cursos Universitários), condicionado aos bloqueios existentes. Confirmar identidade, missão, atribuições, fontes, limites, memória/vínculo com evidências, estado de Estratégia e continuidade. Especialização: Distinguir cursos superiores, instituições, modalidades, atos regulatórios e fontes e-MEC; missão de pesquisa documental aprovada, mas possível divergência entre REQUEST_LOG e AGENTS/PROJECT_STATE/ROADMAP; verificar EA-000021-000001 concluída, EA-000021-000002 somente se comprovada; não inventar oferta, reconhecimento MEC, matrícula, curso ou site. Não editar configurações, EAs, código, site, permissões, SCIV_STATE, nem ativar SCIV. Verificar SCIV_STATE.json primeiro: se enabled=false ou activation_blocked, NÃO executar leitura/operação SCIV nem publicar resposta como se o canal estivesse ativo; declarar SCIV_OPERATION_BLOCKED e, se admissível, apresentar apenas diagnóstico independente de leitura nativa e fontes no chat. Se leitura SCIV estiver legitimamente habilitada e executada, produzir resposta correlacionada e relatório novo em governanca/recebimentos/2026-10-20-prj-000021-gate-a6-reteste.md, somente após autorização de escrita e confirmação de commit/ref/bytes. Sem ferramenta/escrita, informar WRITE_BLOCKED/PERSISTENCE_BLOCKED; deixar mensagem ativa.",
+  "acceptance_criteria": [
+    "A sessão destinatária identifica corretamente PRJ-000021, Cursos Universitários, domínio, independência institucional e repositório canônico; não se apresenta como IA de outro Projeto.",
+    "Mostra evidências atuais de AGENTS.md, PROJECT_STATE.json, ROADMAP.md, REQUEST_LOG.jsonl, STRATEGY_LOG.jsonl, plano de EA pertinente e adaptadores/chatgpt/INSTRUCOES.md, diferenciando leitura real de informação prévia.",
+    "Reconstrói missão e suas autorizações, estratégia/fase vigentes e divergências sem tratar o relatório de 10/10 como execução nova.",
+    "Identifica fontes autorizadas, hierarquia/proveniência, dados proibidos em Git público, autonomia por executores e limites de gastos, efeitos e permissões.",
+    "Classifica vínculo ChatGPT B1, memória C3, instalação nativa declarada pelo humano e aceite A6/B8 separadamente como VERIFIED, HUMAN_ATTESTED, NOT_VERIFIED ou BLOCKED; não promove gate automaticamente.",
+    "Respeita enabled=false/operational_activation_blocked quando constarem no SCIV_STATE; pedido humano de leitura não remove bloqueador e não habilita automação, polling, Pages ou PEP live.",
+    "Diferencia teste de recebimento A6/B8 de teste funcional do SCIV; anota impedimentos de leitura/escrita sem inventar commit ou recebimento.",
+    "Produz resposta própria correlacionada a este message_id e relatório com data atual apenas se as operações forem permitidas; caso contrário fornece diagnóstico em chat e limitações verificáveis, sem arquivamento prematuro."
+  ],
+  "risk_class": "LOW",
+  "classification": {
+    "sensitivity": "S0_PUBLICO",
+    "surface": "P2_GIT_PUBLICO_REPOSITORIO"
+  },
+  "source_version": "8b45268d5dffb30e073afc4cc543bf06aa82c319",
+  "correlation_id": "SCIV-F007-PRJ000021-20261020-001",
+  "evidence_refs": [
+    "adaptadores/chatgpt/INSTRUCOES.md",
+    "comunicados/SCIV_STATE.json",
+    "governanca/recebimentos/2026-10-10-prj-000021-gate-a6.md",
+    "AGENTS.md",
+    "PROJECT_STATE.json",
+    "ROADMAP.md",
+    "REQUEST_LOG.jsonl",
+    "STRATEGY_LOG.jsonl"
+  ],
+  "status": "DIAGNOSTIC_TEST_PENDING_HUMAN_TRIGGER_NO_SCIV_ACTIVATION"
+}
