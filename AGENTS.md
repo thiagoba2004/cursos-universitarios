@@ -10,7 +10,7 @@
 
 ## 1. Estado da missão
 
-Este é um Projeto novo sobre o tema nominal **cursos universitários**. Sua **finalidade substantiva, público-alvo e tipos de entrega permanecem PENDENTES DE DEFINIÇÃO HUMANA**. Não deduzir, a partir do nome, que o Projeto oferecerá ensino, certificação, serviços bancários, dados financeiros, produtos regulados ou representação institucional.
+A **missão humana foi aprovada em `REQ-000021-20261010-002`**: pesquisar e sistematizar informações sobre cursos superiores e instituições de ensino. A reconciliação foi documentada em `MISSAO_E_ESCOPO.md` e vinculada à `EA-000021-000002`; público-alvo detalhado e produtos específicos ainda requerem delimitação, sem presumir oferta de ensino, matrícula, certificação, autorização oficial, serviços ou site.
 
 ## 2. Fonte normativa e continuidade
 
@@ -40,7 +40,7 @@ Distinguir `PLANEJADO`, `SALVO`, `VERSIONADO`, `PUBLICADO` e `VERIFICADO`. Não 
 
 ## 6. Próximo gate humano
 
-Concluir o bootstrap mínimo em `EA-000021-000001`, conferir `PROJECT_STATE.json` e `ROADMAP.md`, e solicitar missão, público-alvo e primeira entrega antes de ativar o trabalho substantivo. A governança não deve gerar tarefas apenas para justificar sua existência.
+O bootstrap técnico `EA-000021-000001` foi concluído. A missão já aprovada foi reconciliada na `EA-000021-000002` (fase `F-000021-000002-002`). O próximo gate A6 exige comprovação **B1 da conversa destinatária PRJ-000021** e recibo positivo emitido pela IA especializada no próprio Projeto, além de contexto recuperável; não solicitar nova aprovação da missão nem confundir SCIV com aceite. A pesquisa de domínio seguirá apenas depois do handoff/autorização local.
 
 ## Adaptador ChatGPT — persistência independente da plataforma
 

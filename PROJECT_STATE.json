@@ -6,19 +6,19 @@
   "project_alias": null,
   "project_id_legacy": "cursos-universitarios",
   "repository": "thiagoba2004/cursos-universitarios",
-  "updated_at": "2026-10-10",
-  "status": "TECHNICAL_BOOTSTRAP_VERIFIED_SUBSTANTIVE_SCOPE_PENDING",
+  "updated_at": "2026-10-21",
+  "status": "SUBSTANTIVE_MISSION_APPROVED_A6_HANDOFF_PENDING",
   "generator_project_code": "PRJ-000002",
   "generator_strategy_code": "EA-000002-000025",
   "generator_route": "A",
   "generated_from_kernel": "1.11",
-  "current_strategy_code": null,
-  "current_strategy_name": null,
-  "current_phase_code": null,
-  "strategy_status": "SEM_ESTRATEGIA_ATIVA",
-  "project_purpose_status": "PENDING_HUMAN_DEFINITION",
-  "target_audience_status": "PENDING_HUMAN_DEFINITION",
-  "products_and_services_status": "NOT_DEFINED",
+  "current_strategy_code": "EA-000021-000002",
+  "current_strategy_name": "Missão aprovada, contexto especializado e recebimento A6",
+  "current_phase_code": "F-000021-000002-002",
+  "strategy_status": "IN_PROGRESS",
+  "project_purpose_status": "HUMAN_APPROVED_REQ-000021-20261010-002",
+  "target_audience_status": "DETAILED_AUDIENCE_NOT_INFERRED",
+  "products_and_services_status": "RESEARCH_CATALOG_PLANNING_AUTHORIZED_NO_PRODUCT_COMPLETED",
   "site_status": "NOT_REQUESTED_NOT_VERIFIED",
   "repository_visibility": "PUBLIC",
   "artifact_policy": {
@@ -34,15 +34,18 @@
     "PROJECT_STATE.json",
     "ROADMAP.md",
     "INFORMATION_HANDLING_PROFILE.json",
-    "estrategias/EA-000021-000001-bootstrap-rota-a.md"
+    "estrategias/EA-000021-000001-bootstrap-rota-a.md",
+    "MISSAO_E_ESCOPO.md",
+    "estrategias/EA-000021-000002-missao-contexto-handoff-a6.md"
   ],
-  "last_completed_milestone": "EA-000021-000001: arquivos mínimos no GitHub, perfil do Gerador e códigos verificados",
+  "last_completed_milestone": "Aprovação humana de missão de 10/10 reconciliada documentalmente em 21/10; EA002 registrada e plano canônico publicado; A6 não aceito",
   "pending_items": [
-    "Definição humana da missão substantiva, público-alvo e entregas do Projeto.",
-    "Decisão humana sobre necessidade de site público próprio (GitHub é público, Pages não solicitado).",
-    "Seleção de módulos setoriais após definição de escopo."
+    "Comprovar B1 da conversa que emitiu o relatório especializado de 20/10, sem repetir auditoria de domínio.",
+    "Obter da IA destinatária decisão e recibo A6 positivo em seu próprio contexto, com prova e readback.",
+    "Concluir delimitação das fontes e do primeiro recorte de catálogo na EA002, sem executar trabalho substantivo em nome da IA.",
+    "Sem autorização de site Pages ou novos gastos."
   ],
-  "next_logical_step": "Solicitar definição de finalidade substantiva e primeiras entregas; não iniciar pesquisa, serviços ou site por inferência.",
+  "next_logical_step": "Gerador coordena atestação B1 da conversa PRJ021 e formalização pela IA destinatária do recibo A6; não solicitar novamente aprovação de missão.",
   "no_new_spending": true,
   "last_concluded_strategy_code": "EA-000021-000001",
   "last_concluded_strategy_name": "Inicialização técnica canônica do Cursos Universitários pela Rota A",
@@ -58,5 +61,25 @@
     "substantive_scope_approved": false,
     "site_created": false,
     "cost_added": false
+  },
+  "mission_approval": {
+    "approved": true,
+    "request_id": "REQ-000021-20261010-002",
+    "approved_at": "2026-10-10",
+    "mission_ref": "MISSAO_E_ESCOPO.md",
+    "reconciled_at": "2026-10-21",
+    "source": "REQUEST_LOG.jsonl",
+    "detailed_audience_decision": "NOT_ASSUMED"
+  },
+  "a6_handoff": {
+    "status": "HANDOFF_PENDING",
+    "gate": "A6",
+    "B1_current_conversation": "NOT_ATTESTED",
+    "C3_evidence": "G0_2026_10_20_UI_OBSERVATION_NO_NATIVE_API_VERIFICATION",
+    "specialized_receipt_positive": false,
+    "recipient_owner": "IA_ESPECIALIZADA_PRJ000021",
+    "coordinator": "PRJ-000002",
+    "no_sciv_change": true,
+    "prior_report_ref": "governanca/recebimentos/2026-10-20-prj-000021-gate-a6-registro-g0.md"
   }
 }
